@@ -55,13 +55,18 @@ table {
 
 html, body {
 	height: 100%;
-	width: 100%;	
+	width: 100%;
+	font-style: oblique;
+	color: white;
+	background-color: grey;	
 }
 
 
 
 header {
-
+	h1 {
+		font-size: 70px;
+	}
 	div {
 		display: flex;
 		justify-content: center;
@@ -72,21 +77,91 @@ header {
 		justify-content: center;
 		justify-content: space-around;
 		padding-top: 2%;
+		padding-bottom: 2%;
+		a{
+			text-decoration: none;
+			color: white;	
+		}
+		a:hover {
+			background-color: @hover-color;
+		}
 	}
 
 }
 
+.Meliodas {
+	margin-left: 2%;
+}
+
+@hover-color: fuchsia;
+@font-size: 20px;
+
 #main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+	#intro {
+		width: 100%;
+		padding-left: 2%;
+		padding-right: 31%;
+		margin-top: 1%;
+	}
 	#skills {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		margin-top: 1%;
+		padding-left: 2%;
+		padding-right: 21%;
 	}
-	p {
-		border: 1px solid black;	
+	.major{
+		font-size: x-large;
+		border-bottom: 1px solid black;
+	}
+	#work-history {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 1%;
+		padding-left: 2%;
+		padding-right: 11%;
+	}
+	.c {
+		list-style-type: disc;
+		font-size: @font-size;
+		padding-left: 1%;
+	}
+	#contact {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin-top: 2%;
+		padding-left: 2%;
+		.fields {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			.field {
+				padding: 1%;
+				margin-top: 1%;
+					
+				
+			}
+		}	
+	}
+	.actions {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin-top: 4%;
+		margin-left: 1%;
+		margin-bottom: 1%;
 	}
 }
 
-
-
+@media (max-width: 500px){
+	
+}
+	
