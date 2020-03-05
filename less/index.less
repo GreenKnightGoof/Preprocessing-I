@@ -66,6 +66,8 @@ html, body {
 header {
 	h1 {
 		font-size: 70px;
+
+		@media (max-width: 500px){font-size: 50px;}
 	}
 	div {
 		display: flex;
@@ -86,7 +88,6 @@ header {
 			background-color: @hover-color;
 		}
 	}
-
 }
 
 .Meliodas {
@@ -95,6 +96,12 @@ header {
 
 @hover-color: fuchsia;
 @font-size: 20px;
+.font-class() {
+	color: blue;
+}
+.padding-class() {
+	padding-left: 1%;
+}
 
 #main {
 	display: flex;
@@ -106,6 +113,7 @@ header {
 		padding-left: 2%;
 		padding-right: 31%;
 		margin-top: 1%;
+		.padding-class();
 	}
 	#skills {
 		display: flex;
@@ -114,6 +122,7 @@ header {
 		margin-top: 1%;
 		padding-left: 2%;
 		padding-right: 21%;
+		.font-class();
 	}
 	.major{
 		font-size: x-large;
@@ -159,9 +168,5 @@ header {
 		margin-left: 1%;
 		margin-bottom: 1%;
 	}
-}
-
-@media (max-width: 500px){
-	
 }
 	
